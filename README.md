@@ -92,7 +92,7 @@ Sinta-se à vontade para usar, modificar e contribuir.
 **Danilo Pelaes de Almeida**  
 📧 danilopelaes@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/danilo-almeida-00107b64/)  
-🌐 [almeida-pranchascientificas.vercel.app](https://almeida-pranchascientificas.vercel.app)
+
 
 ---
 
