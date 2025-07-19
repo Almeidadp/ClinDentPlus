@@ -1,14 +1,14 @@
-// src/app/layout.tsx
+// app/layout.tsx
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
-import { cn } from "@/lib/utils"; // ✅ Certifique-se de importar o `cn`
+import { cn } from "@/lib/utils";
 
-// Fonte personalizada com Tailwind
+// Importa a fonte Poppins com variação de peso
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
+  variable: "--font-poppins", // Cria a variável para o Tailwind
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={poppins.variable}>
-      <body className={cn("bg-background text-foreground font-sans antialiased")}>
+      <body className="bg-neutral-50 text-neutral-900 font-sans antialiased min-h-screen">
         {children}
       </body>
     </html>

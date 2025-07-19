@@ -1,27 +1,64 @@
 {
   "compilerOptions": {
+    // Compatibilidade de JavaScript moderno
     "target": "ES2017",
+
+    // Bibliotecas disponíveis no projeto (DOM, ESNext, etc.)
     "lib": ["dom", "dom.iterable", "esnext"],
+
+    // Permite arquivos JS (se necessário)
     "allowJs": true,
+
+    // Ignora verificação de tipos de libs do node_modules
     "skipLibCheck": true,
+
+    // Ativa modo estrito (boa prática)
     "strict": true,
+
+    // Não gera arquivos JS ao compilar
     "noEmit": true,
+
+    // Suporte para `import/export` moderno
     "esModuleInterop": true,
+
+    // Módulo padrão para ESM
     "module": "esnext",
+
+    // Recomendado para Next.js (e bundlers modernos)
     "moduleResolution": "bundler",
+
+    // Permite importar arquivos .json como módulos
     "resolveJsonModule": true,
+
+    // Garante que cada arquivo seja tratado como módulo isolado
     "isolatedModules": true,
+
+    // Suporte ao JSX
     "jsx": "preserve",
+
+    // Compilações incrementais (acelera builds)
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+
+    // Plugin de tipagem para Next.js
+    "plugins": [{ "name": "next" }],
+
+    // Define o caminho base para imports absolutos
+    "baseUrl": ".",
+
+    // Atalho para importações usando `@/`
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+
+  // Inclui arquivos do projeto
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+, "postcss.config.mjs"  ],
+
+  // Exclui a pasta de dependências
   "exclude": ["node_modules"]
 }

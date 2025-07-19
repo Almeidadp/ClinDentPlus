@@ -1,0 +1,125 @@
+id,paciente,procedimento,data,observacoes
+1,Maria Vitória da Rocha,Restauração,2024-07-28,Solicitado repouso de 3 dias
+2,Marcelo Farias,Implante,2024-12-01,Aguardando retorno
+3,Sra. Luna Ramos,Restauração,2024-07-22,Aguardando retorno
+4,Davi Lucca da Costa,Canal,2025-01-21,Paciente relatou dor leve
+5,Enzo Gabriel Ramos,Canal,2024-08-12,Encaminhado para especialista
+6,Enzo Freitas,Restauração,2025-07-01,Encaminhado para especialista
+7,Arthur Gonçalves,Clareamento,2025-05-03,Solicitado repouso de 3 dias
+8,Olivia Cardoso,Restauração,2025-06-10,Paciente relatou dor leve
+9,Sr. Miguel Jesus,Canal,2024-01-17,Solicitado repouso de 3 dias
+10,Gustavo Henrique Lopes,Restauração,2023-09-21,Solicitado repouso de 3 dias
+11,Giovanna Martins,Raio-X,2024-10-18,Utilizou anestesia local
+12,Luiz Otávio Farias,Canal,2024-03-19,Paciente relatou dor leve
+13,Ana Júlia da Cruz,Implante,2024-03-01,Solicitado repouso de 3 dias
+14,Erick Moura,Raio-X,2024-08-31,Aguardando retorno
+15,Vitor Gabriel Viana,Limpeza,2023-09-10,Procedimento bem-sucedido
+16,Eduardo Pires,Ortodontia,2024-08-18,Aguardando retorno
+17,Sra. Rebeca Gonçalves,Canal,2024-10-30,Procedimento bem-sucedido
+18,Sr. João Pedro Duarte,Limpeza,2025-01-26,Solicitado repouso de 3 dias
+19,Cecília Oliveira,Raio-X,2024-06-18,Aguardando retorno
+20,Sr. Luiz Gustavo Martins,Limpeza,2025-04-12,Utilizou anestesia local
+21,Rafaela Barros,Restauração,2024-02-13,Encaminhado para especialista
+22,Mirella Nogueira,Ortodontia,2025-04-23,Utilizou anestesia local
+23,Daniela Ribeiro,Extração,2024-01-02,Solicitado repouso de 3 dias
+24,Enrico da Conceição,Canal,2023-10-02,Agendada nova consulta
+25,Nicolas Teixeira,Raio-X,2023-08-19,Recomendada revisão em 6 meses
+26,Breno Dias,Extração,2024-11-04,Procedimento bem-sucedido
+27,Thomas Gomes,Limpeza,2023-10-15,Agendada nova consulta
+28,Pedro Miguel da Mata,Extração,2025-05-03,Recomendada revisão em 6 meses
+29,Júlia Moraes,Restauração,2024-09-12,Paciente relatou dor leve
+30,Enzo Barbosa,Ortodontia,2024-06-12,Paciente relatou dor leve
+31,Agatha Novaes,Implante,2024-12-26,Solicitado repouso de 3 dias
+32,Ana Julia Souza,Canal,2024-06-18,Solicitado repouso de 3 dias
+33,João Pedro Almeida,Canal,2025-05-17,Encaminhado para especialista
+34,Cecília da Paz,Implante,2024-10-25,Procedimento bem-sucedido
+35,Cauê Ribeiro,Canal,2023-12-07,Aguardando retorno
+36,Sabrina Aragão,Restauração,2024-09-26,Agendada nova consulta
+37,Vitor Gabriel Novaes,Ortodontia,2023-12-31,Utilizou anestesia local
+38,Noah Caldeira,Raio-X,2024-02-19,Procedimento bem-sucedido
+39,Sofia Viana,Extração,2023-11-23,Aguardando retorno
+40,Guilherme Rezende,Restauração,2025-05-04,Agendada nova consulta
+41,Dr. Anthony Moreira,Canal,2025-03-23,Utilizou anestesia local
+42,Isabel Monteiro,Canal,2025-01-25,Recomendada revisão em 6 meses
+43,Rodrigo Correia,Clareamento,2024-11-30,Procedimento bem-sucedido
+44,Dra. Manuela Costela,Extração,2025-02-10,Procedimento bem-sucedido
+45,Theo Porto,Raio-X,2023-10-21,Recomendada revisão em 6 meses
+46,Laura Dias,Raio-X,2025-06-25,Agendada nova consulta
+47,Dr. Davi Lucas da Luz,Ortodontia,2025-05-22,Procedimento bem-sucedido
+48,Dra. Alexia Gomes,Limpeza,2024-09-06,Procedimento bem-sucedido
+49,Vicente Dias,Extração,2023-10-20,Aguardando retorno
+50,Heloísa Aragão,Ortodontia,2024-06-22,Encaminhado para especialista
+51,Vitor Hugo Pires,Extração,2023-10-11,Aguardando retorno
+52,Amanda Ribeiro,Raio-X,2025-01-17,Agendada nova consulta
+53,Yasmin Ramos,Raio-X,2024-06-01,Recomendada revisão em 6 meses
+54,Sophia Fogaça,Implante,2024-07-21,Procedimento bem-sucedido
+55,Ana Sophia Castro,Clareamento,2024-08-25,Recomendada revisão em 6 meses
+56,Thiago da Cunha,Ortodontia,2025-01-07,Utilizou anestesia local
+57,Benjamin Duarte,Extração,2023-12-28,Utilizou anestesia local
+58,Alexia Cardoso,Restauração,2025-01-01,Recomendada revisão em 6 meses
+59,Thales Barros,Clareamento,2024-05-31,Encaminhado para especialista
+60,Gabrielly Rocha,Limpeza,2025-05-19,Procedimento bem-sucedido
+61,Luiz Miguel da Mota,Clareamento,2024-02-10,Agendada nova consulta
+62,Isabelly Costa,Ortodontia,2024-08-23,Recomendada revisão em 6 meses
+63,Carolina Rocha,Limpeza,2023-10-27,Aguardando retorno
+64,Sra. Carolina Alves,Limpeza,2024-06-18,Aguardando retorno
+65,Vitor Hugo Freitas,Limpeza,2025-04-26,Aguardando retorno
+66,Agatha Melo,Raio-X,2025-06-02,Solicitado repouso de 3 dias
+67,Giovanna da Mata,Canal,2023-08-31,Aguardando retorno
+68,Pietra Ribeiro,Restauração,2025-01-18,Agendada nova consulta
+69,Manuela Fogaça,Ortodontia,2024-02-16,Procedimento bem-sucedido
+70,Yuri Lopes,Restauração,2024-06-22,Procedimento bem-sucedido
+71,Ana Júlia Almeida,Implante,2023-09-26,Aguardando retorno
+72,Yuri Cardoso,Extração,2023-09-05,Paciente relatou dor leve
+73,Rafaela Campos,Implante,2024-02-23,Solicitado repouso de 3 dias
+74,Emanuel Sales,Clareamento,2025-06-28,Utilizou anestesia local
+75,Bruno Cunha,Implante,2025-03-07,Procedimento bem-sucedido
+76,Ana Vitória Teixeira,Raio-X,2024-03-17,Recomendada revisão em 6 meses
+77,Carolina Costa,Ortodontia,2024-01-01,Procedimento bem-sucedido
+78,Sarah Lopes,Canal,2024-12-06,Utilizou anestesia local
+79,Ana Laura da Rosa,Canal,2024-01-23,Aguardando retorno
+80,Isabelly Carvalho,Restauração,2023-09-25,Paciente relatou dor leve
+81,Luana da Costa,Canal,2023-12-01,Agendada nova consulta
+82,Manuela Costela,Restauração,2024-12-09,Paciente relatou dor leve
+83,Isabella Novaes,Limpeza,2024-07-02,Encaminhado para especialista
+84,Raul Carvalho,Raio-X,2025-03-16,Recomendada revisão em 6 meses
+85,Elisa Vieira,Limpeza,2024-03-12,Procedimento bem-sucedido
+86,Rebeca Jesus,Canal,2024-02-16,Aguardando retorno
+87,Caroline da Rocha,Extração,2025-02-27,Utilizou anestesia local
+88,Leonardo Moraes,Implante,2024-07-14,Procedimento bem-sucedido
+89,Luigi Rodrigues,Clareamento,2025-03-31,Utilizou anestesia local
+90,Dr. Ian Santos,Extração,2023-10-04,Procedimento bem-sucedido
+91,Erick Novaes,Ortodontia,2023-12-15,Solicitado repouso de 3 dias
+92,Thomas Gomes,Ortodontia,2024-12-14,Paciente relatou dor leve
+93,Raquel Araújo,Restauração,2024-07-12,Utilizou anestesia local
+94,Alice Moraes,Ortodontia,2024-07-19,Agendada nova consulta
+95,Dr. Pedro Miguel Cardoso,Restauração,2025-05-06,Paciente relatou dor leve
+96,Alícia Moura,Canal,2024-03-23,Utilizou anestesia local
+97,Sra. Bianca Cavalcanti,Raio-X,2023-09-13,Procedimento bem-sucedido
+98,Ana Laura Freitas,Limpeza,2024-05-20,Utilizou anestesia local
+99,Bernardo Duarte,Clareamento,2023-09-19,Encaminhado para especialista
+100,Rafaela Alves,Ortodontia,2024-10-18,Aguardando retorno
+101,Cauê Viana,Raio-X,2024-08-04,Agendada nova consulta
+102,Yasmin Almeida,Extração,2025-05-26,Utilizou anestesia local
+103,Sra. Fernanda Ferreira,Extração,2024-08-15,Procedimento bem-sucedido
+104,Dra. Raquel Fernandes,Restauração,2024-06-16,Recomendada revisão em 6 meses
+105,Murilo Ramos,Limpeza,2025-04-29,Solicitado repouso de 3 dias
+106,Dra. Lívia da Mata,Extração,2024-07-22,Recomendada revisão em 6 meses
+107,Natália Pinto,Clareamento,2025-05-16,Utilizou anestesia local
+108,Lívia Campos,Restauração,2023-09-13,Procedimento bem-sucedido
+109,Ana Luiza Nogueira,Clareamento,2023-09-13,Paciente relatou dor leve
+110,Luiz Fernando Pinto,Implante,2024-06-27,Recomendada revisão em 6 meses
+111,Samuel Lima,Clareamento,2025-03-16,Utilizou anestesia local
+112,Laís Araújo,Clareamento,2024-09-10,Procedimento bem-sucedido
+113,Luiz Gustavo Cardoso,Implante,2025-02-16,Paciente relatou dor leve
+114,Srta. Maysa Gomes,Ortodontia,2024-08-01,Aguardando retorno
+115,Ana Júlia Ferreira,Limpeza,2024-04-25,Encaminhado para especialista
+116,João Gabriel Cardoso,Canal,2024-08-03,Paciente relatou dor leve
+117,Isaac Farias,Extração,2024-10-03,Solicitado repouso de 3 dias
+118,Emanuel Pinto,Extração,2023-11-18,Procedimento bem-sucedido
+119,Maysa Cunha,Raio-X,2024-07-15,Recomendada revisão em 6 meses
+120,Maria Fernanda Costa,Limpeza,2025-04-07,Agendada nova consulta
+121,Rafaela Costa,Extração,2025-03-18,Solicitado repouso de 3 dias
+122,Alícia Melo,Limpeza,2024-06-19,Procedimento bem-sucedido
+123,Eduarda da Costa,Limpeza,2024-08-10,Paciente relatou dor leve
+124,Gabriel Mendes,Ortodontia,2025-05-28,Aguardando retorno

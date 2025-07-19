@@ -1,103 +1,119 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+import {
+  FaUsers,
+  FaCalendarAlt,
+  FaClipboardList,
+  FaFileInvoiceDollar,
+} from "react-icons/fa";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+
+const shortcuts = [
+  {
+    icon: <FaUsers size={32} className="text-blue-600" />,
+    title: "Clientes",
+    subtitle: "15 cadastrados",
+    description: "Registre, edite e visualize dados dos pacientes.",
+    href: "/clientes",
+  },
+  {
+    icon: <FaCalendarAlt size={32} className="text-blue-600" />,
+    title: "Agendamentos",
+    subtitle: "8 marcados para hoje",
+    description: "Controle datas, horários e confirmações.",
+    href: "/agendamentos",
+  },
+  {
+    icon: <FaClipboardList size={32} className="text-blue-600" />,
+    title: "Histórico",
+    subtitle: "124 atendimentos",
+    description: "Veja todos os atendimentos de forma clara.",
+    href: "/historico",
+  },
+  {
+    icon: <FaFileInvoiceDollar size={32} className="text-blue-600" />,
+    title: "Orçamentos",
+    subtitle: "5 pendentes",
+    description: "Crie e acompanhe propostas de tratamento.",
+    href: "/orcamentos",
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      {/* Navbar */}
+      <header className="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-sm border-b z-50 shadow-sm">
+        <nav className="max-w-7xl mx-auto flex justify-between items-center p-4">
+          <h1 className="text-xl font-bold text-blue-700">ClinDentPlus</h1>
+          <div className="space-x-4 text-sm hidden md:flex">
+            {shortcuts.map(({ title, href }) => (
+              <Link key={href} href={href} className="hover:underline">
+                {title}
+              </Link>
+            ))}
+          </div>
+        </nav>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Conteúdo principal */}
+      <main className="min-h-screen pt-32 pb-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white to-blue-50">
+        <div className="max-w-6xl mx-auto space-y-12">
+
+          {/* Boas-vindas */}
+          <section className="text-center space-y-4">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-blue-800">
+              Bem-vindo ao <span className="text-primary">ClinDentPlus</span>
+            </h1>
+            <p className="text-muted-foreground text-lg md:text-xl">
+              Sistema inteligente para clínicas odontológicas: pacientes, agendamentos, orçamentos e muito mais.
+            </p>
+            <p className="text-sm text-gray-500">
+              Último acesso: 19/07/2025 às 09:45
+            </p>
+            <Button className="bg-blue-600 text-white">+ Novo Cliente</Button>
+          </section>
+
+          {/* Acesso rápido */}
+          <section className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {shortcuts.map(({ icon, title, subtitle, description, href }) => (
+              <Card
+                key={title}
+                className="shadow-md border border-blue-100 hover:shadow-xl transition-all"
+              >
+                <CardContent className="p-5 flex flex-col gap-4 justify-between h-full">
+                  <div className="flex items-center gap-4">
+                    {icon}
+                    <div>
+                      <h2 className="text-lg font-semibold text-blue-900">{title}</h2>
+                      <p className="text-xs text-muted-foreground">{subtitle}</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600">{description}</p>
+                  <div className="flex justify-between items-center mt-auto">
+                    <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1">
+                      <Link href={href}>Acessar</Link>
+                    </Button>
+                    <Link href={href} className="text-xs text-blue-600 underline hover:text-blue-800">
+                      Ver detalhes
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </section>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Rodapé */}
+      <footer className="bg-blue-50 border-t mt-12">
+        <div className="max-w-6xl mx-auto p-4 text-center text-sm text-gray-600">
+          © {new Date().getFullYear()} ClinDentPlus. Desenvolvido por Danilo Almeida.
+        </div>
       </footer>
-    </div>
+    </>
   );
 }
